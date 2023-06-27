@@ -38,7 +38,7 @@ sütunlarındaki verileri sıralayınız.
 SELECT title, description FROM film;
 
 ```
-![Image](assets\1.1.png)
+![Image](assets/1.1.png)
 
 <br>
 <br>
@@ -54,7 +54,7 @@ SELECT * FROM film
 WHERE length > 60 AND length < 75;
 
 ```
-![Image](assets\1.2.png)
+![Image](assets/1.2.png)
 
 
 <br>
@@ -72,7 +72,7 @@ WHERE rental_rate = 0.99 AND replacement_cost = 12.99
 OR replacement_cost = 28.99;
 
 ```
-![Image](assets\1.3.png)
+![Image](assets/1.3.png)
 
 
 <br>
@@ -89,7 +89,7 @@ SELECT last_name FROM customer
 WHERE first_name = 'Mary';
 
 ```
-![Image](assets\1.4.png)
+![Image](assets/1.4.png)
 
 
 <br>
@@ -105,7 +105,7 @@ WHERE length <= 50
 AND NOT (rental_rate = 2.99 OR rental_rate = 4.99);
 
 ```
-![Image](assets\1.5.png)
+![Image](assets/1.5.png)
 
 <br>
 <br>
