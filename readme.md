@@ -15,17 +15,16 @@
 
 - **SQL Ödev 01 | WHERE ve Karşılaştırma & Mantıksal**
 - **SQL Ödev 02 | BETWEEN ve IN**
+- **SQL Ödev 03 | LIKE ve ILIKE**
 
 
-
-
+<br>
+<br>
 <br>
 
 
 ## SQL Ödev 01 | WHERE ve Karşılaştırma & Mantıksal Operatörler 
 
-<br>
-<br>
 <br>
 
 1-) <strong>film </strong>tablosunda bulunan <strong>title</strong> ve <strong>description</strong> 
@@ -154,7 +153,68 @@ WHERE rental_rate IN (0.99, 2.99, 4,99) AND replacement_cost IN (12.99, 15.99, 2
 ![Image](assets/2.3.png)
 
 <br>
+<br>
+<br>
 
+## SQL Ödev 03 | LIKE ve ILIKE
+
+<br>
+
+1-)  <strong>country</strong> tablosunda bulunan  <strong>country</strong> sütunundaki ülke isimlerinden 'A' karakteri ile başlayıp 'a' karakteri ile sonlananları sıralayınız.
+
+```sql
+
+SELECT country FROM country
+WHERE country LIKE 'A%a' 
+
+```
+![Image](assets/3.1.png)
+
+
+<br>
+<br>
+<br>
+
+2-) <strong>country</strong> tablosunda bulunan <strong>country</strong> sütunundaki ülke isimlerinden en az 6 karakterden oluşan ve sonu 'n' karakteri ile sonlananları sıralayınız.
+
+```
+
+SELECT country FROM country 
+WHERE country LIKE '_____%n' 
+
+```
+![Image](assets/3.2.png)
+
+<br>
+<br>
+<br>
+
+3-) <strong>film</strong> tablosunda bulunan <strong>title</strong> sütunundaki film isimlerinden en az 4 adet büyük ya da küçük harf farketmesizin <strong>'T'</strong> karakteri içeren film isimlerini sıralayınız.
+
+```
+
+SELECT title FROM film 
+WHERE title ~~* '%T%T%T%T%' 
+
+```
+![Image](assets/3.3.png)
+
+<br>
+<br>
+<br>
+
+4-) <strong>film</strong> tablosunda bulunan tüm sütunlardaki verilerden <strong>title</strong> 'C' karakteri ile başlayan ve uzunluğu (length) 90 dan büyük olan ve <strong>rental_rate</strong> 2.99 olan verileri sıralayınız.
+
+```
+
+SELECT * FROM film 
+WHERE title LIKE 'C%' AND length > 90 AND rental_rate = 2.99; 
+
+```
+![Image](assets/3.4.png)
+
+
+<br>
 <br>
 <hr>
 <br>
