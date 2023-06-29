@@ -179,11 +179,9 @@ WHERE country LIKE 'A%a'
 
 2-) <strong>country</strong> tablosunda bulunan <strong>country</strong> sütunundaki ülke isimlerinden en az 6 karakterden oluşan ve sonu 'n' karakteri ile sonlananları sıralayınız.
 
-```
-
+```sql
 SELECT country FROM country 
 WHERE country LIKE '_____%n' 
-
 ```
 ![Image](assets/3.2.png)
 
@@ -193,11 +191,9 @@ WHERE country LIKE '_____%n'
 
 3-) <strong>film</strong> tablosunda bulunan <strong>title</strong> sütunundaki film isimlerinden en az 4 adet büyük ya da küçük harf farketmesizin <strong>'T'</strong> karakteri içeren film isimlerini sıralayınız.
 
-```
-
+```sql
 SELECT title FROM film 
 WHERE title ~~* '%T%T%T%T%' 
-
 ```
 ![Image](assets/3.3.png)
 
@@ -207,11 +203,9 @@ WHERE title ~~* '%T%T%T%T%'
 
 4-) <strong>film</strong> tablosunda bulunan tüm sütunlardaki verilerden <strong>title</strong> 'C' karakteri ile başlayan ve uzunluğu (length) 90 dan büyük olan ve <strong>rental_rate</strong> 2.99 olan verileri sıralayınız.
 
-```
-
+```sql
 SELECT * FROM film 
 WHERE title LIKE 'C%' AND length > 90 AND rental_rate = 2.99; 
-
 ```
 ![Image](assets/3.4.png)
 
@@ -267,7 +261,7 @@ WHERE title LIKE 'T%' AND rating = 'G';
 4-) <strong>country</strong> tablosunda bulunan ülke isimlerinden (country) kaç tanesi <strong>5</strong> karakterden oluşmaktadır?
 
 
-```
+```sql
 
 SELECT COUNT(DISTINCT country) FROM country
 WHERE country LIKE '_____';
