@@ -16,6 +16,7 @@
 - **SQL Ödev 01 | WHERE ve Karşılaştırma & Mantıksal**
 - **SQL Ödev 02 | BETWEEN ve IN**
 - **SQL Ödev 03 | LIKE ve ILIKE**
+- **SQL Ödev 04 | DISTINCT ve COUNT**
 
 
 <br>
@@ -212,6 +213,81 @@ WHERE title LIKE 'C%' AND length > 90 AND rental_rate = 2.99;
 
 ```
 ![Image](assets/3.4.png)
+
+<br>
+<br>
+<br>
+
+## SQL Ödev 04 | DISTINCT ve COUNT
+
+<br>
+
+1-)  <strong>film</strong> tablosunda bulunan  <strong>replacement_cost</strong> sütununda bulunan birbirinden farklı değerleri sıralayınız.
+
+```sql
+
+SELECT DISTINCT replacement_cost FROM film
+
+```
+![Image](assets/4.1.png)
+
+<br>
+<br>
+<br>
+
+2-) <strong>film</strong> tablosunda bulunan <Strong>replacement_cost</strong> sütununda birbirinden farklı kaç tane veri vardır?
+
+```sql
+
+SELECT COUNT (DISTINCT replacement_cost) FROM film
+
+```
+![Image](assets/4.2.png)
+
+<br>
+<br>
+<br>
+
+3-) <strong>film</strong> tablosunda bulunan film isimlerinde  <strong>(title)</strong> kaç tanesini T karakteri ile başlar ve aynı zamanda  <strong>rating</strong> 'G' ye eşittir?
+
+```sql
+
+SELECT COUNT(*) FROM film 
+WHERE title LIKE 'T%' AND rating = 'G';
+
+```
+![Image](assets/4.3.png)
+<br>
+<br>
+<br>
+
+
+
+4-) <strong>country</strong> tablosunda bulunan ülke isimlerinden (country) kaç tanesi <strong>5</strong> karakterden oluşmaktadır?
+
+
+```
+
+SELECT COUNT(DISTINCT country) FROM country
+WHERE country LIKE '_____';
+
+```
+![Image](assets/4.4.png)
+
+<br>
+<br>
+<br>
+
+5-) city tablosundaki şehir isimlerinin kaç tanesi 'R' veya r karakteri ile biter?
+
+```sql
+
+SELECT COUNT(DISTINCT city) FROM city
+WHERE city ILIKE '%r';
+
+```
+![Image](assets/4.4.png)
+<br>
 
 
 <br>
