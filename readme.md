@@ -18,6 +18,7 @@
 - **SQL Ödev 03 | LIKE ve ILIKE**
 - **SQL Ödev 04 | DISTINCT ve COUNT**
 - **SQL Ödev 05 | ORDER BY | LIMIT ve OFFSET**
+- **SQL Ödev 06 | Aggregate Fonksiyonlar**
 
 
 <br>
@@ -329,10 +330,66 @@ ORDER BY last_name DESC
 LIMIT 4;
 ```
 ![Image](assets/5.3.png)
+<br>
+<br>
+<br>
 
+## SQL Ödev 06 | Aggregate Fonksiyonlar
 
 <br>
 
+1-) film tablosunda bulunan rental_rate sütunundaki değerlerin ortalaması nedir?
+
+
+```sql
+SELECT ROUND(AVG(rental_rate),3) 
+FROM film ;
+```
+![Image](assets/6.1.png)
+
+
+<br>
+<br>
+<br>
+
+2-) film tablosunda bulunan filmlerden kaç tanesi 'C' karakteri ile başlar?
+
+```sql
+SELECT COUNT(*)
+FROM film
+WHERE title LIKE 'C%';
+```
+![Image](assets/6.2.png)
+<br>
+<br>
+<br>
+
+3-) film tablosunda bulunan filmlerden rental_rate değeri 0.99 a eşit olan en uzun (length) film kaç dakikadır?
+
+```sql
+SELECT MAX(length) 
+FROM film 
+WHERE rental_rate = 0.99;
+```
+![Image](assets/6.3.png)
+<br>
+<br>
+<br>
+
+4-) film tablosunda bulunan filmlerin uzunluğu 150 dakikadan büyük olanlarına ait kaç farklı replacement_cost değeri vardır?
+
+
+```sql
+SELECT COUNT(DISTINCT replacement_cost) 
+FROM film 
+WHERE length > 150;
+```
+![Image](assets/6.4.png)
+
+
+
+
+<br>
 <br>
 <br>
 <hr>
