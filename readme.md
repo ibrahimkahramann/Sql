@@ -20,6 +20,7 @@
 - **SQL Ödev 05 | ORDER BY | LIMIT ve OFFSET**
 - **SQL Ödev 06 | Aggregate Fonksiyonlar**
 - **SQL Ödev 07 | GROUP BY | HAVING**
+- **SQL Ödev 08 | Tablo Oluşturmak | Verileri Güncellemek**
 
 
 <br>
@@ -442,7 +443,118 @@ ORDER BY COUNT(*) DESC
 LIMIT 1;
 ```
 ![Image](assets/7.4.png)
+<br>
+<br>
+<br>
 
+## SQL Ödev 08 | Tablo Oluşturmak | Verileri Güncellemek"
+
+<br>
+
+1-) test veritabanınızda employee isimli sütun bilgileri id(INTEGER), name VARCHAR(50), birthday DATE, email VARCHAR(100) olan bir tablo oluşturalım.
+
+
+```sql
+CREATE TABLE employee (
+  id INTEGER,
+  name VARCHAR(50) NOT NULL,
+  birthday DATE,
+  email VARCHAR(100)
+);
+```
+![Image](assets/8.1.png)
+
+<br>
+<br>
+<br>
+
+2-) Oluşturduğumuz employee tablosuna 'Mockaroo' servisini kullanarak 50 adet veri ekleyelim.
+
+```sql
+insert into employee (name, birthday, email) values ('Julianne', '2008-05-20', 'jduker0@yelp.com');
+insert into employee (name, birthday, email) values ('Nolie', '2022-04-03', 'ndaniell1@tripod.com');
+```
+![Image](assets/8.2.png)
+<br>
+<br>
+<br>
+
+3-) Sütunların her birine göre diğer sütunları güncelleyecek 5 adet UPDATE işlemi yapalım.
+
+
+```sql
+-- İsim (name) sütununu güncellemek:
+
+UPDATE employee
+SET name = 'John Doe'
+WHERE name = 'Cullan'
+RETURNING *;
+```
+![Image](assets/8.3.png)
+
+```sql
+-- Doğum günü (birthday) sütununu güncellemek:
+
+UPDATE employee
+SET birthday = '1990-06-15'
+WHERE email = 'yserckd@home.pl';
+
+
+-- E-posta (email) sütununu güncellemek:
+
+UPDATE employee
+SET email = 'johndoe@example.com'
+WHERE birthday = '1950/04/10';
+
+
+-- İsim ve doğum günü sütunlarını güncellemek:
+
+UPDATE employee
+SET name = 'Jane Smith',
+    birthday = '1985-03-20'
+WHERE id = 4;
+
+
+-- Tüm sütunları güncellemek:
+
+UPDATE employee
+SET name = 'Robert Johnson',
+    birthday = '1978-12-10',
+    email = 'robertjohnson@example.com'
+WHERE id = 5;
+```
+
+
+<br>
+<br>
+<br>
+
+
+4-) Sütunların her birine göre ilgili satırı silecek 5 adet DELETE işlemi yapalım.
+
+
+
+```sql
+DELETE FROM employee
+WHERE id = 44
+RETURNING *;
+```
+![Image](assets/8.4.png)
+
+```sql
+DELETE FROM employee
+WHERE name ='Constantin';
+
+DELETE FROM employee
+WHERE name = 'Jane Smith' AND birthday = '1985-03-20';
+
+DELETE FROM employee
+WHERE email = 'umallinsonn@hp.com';
+
+DELETE FROM employee
+WHERE id >5
+RETURNING *;
+```
 
 
 <br>
