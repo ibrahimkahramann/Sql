@@ -28,7 +28,7 @@
 - [**SQL Ödev 10 | LEFT JOIN, RIGHT JOIN, FULL JOIN**](#SQL-Ödev-10-|-LEFT-JOIN,-RIGHT-JOIN,-FULL-JOIN)
 - [**SQL Ödev 11 | UNION, INTERSECT ve EXCEPT**](#SQL-Ödev-11-|-UNION,-INTERSECT-ve-EXCEPT)
 - [**SQL Ödev 12 | Sorgu Senaryoları**](#SQL-Ödev-12-|-Sorgu-Senaryoları)
-- [**Başa Dön**](#SQL-Eğitim-Patika)
+- [**SQL Eğitim Patika**](#SQL-Eğitim-Patika)
 
 <br>
 <br>
