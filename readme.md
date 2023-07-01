@@ -21,6 +21,7 @@
 - **SQL Ödev 06 | Aggregate Fonksiyonlar**
 - **SQL Ödev 07 | GROUP BY | HAVING**
 - **SQL Ödev 08 | Tablo Oluşturmak | Verileri Güncellemek**
+- **SQL Ödev 09 | INNER JOIN**
 
 
 <br>
@@ -555,7 +556,48 @@ DELETE FROM employee
 WHERE id >5
 RETURNING *;
 ```
+<br>
+<br>
+<br>
 
+## SQL Ödev 09 | INNER JOIN
+
+<br>
+
+1-) city tablosu ile country tablosunda bulunan şehir (city) ve ülke (country) isimlerini birlikte görebileceğimiz INNER JOIN sorgusunu yazınız.
+
+```sql
+SELECT city, country
+FROM city
+INNER JOIN country ON city.country_id = country.country_id;
+```
+![Image](assets/9.1.png)
+
+<br>
+<br>
+<br>
+
+2-) customer tablosu ile payment tablosunda bulunan payment_id ile customer tablosundaki first_name ve last_name isimlerini birlikte görebileceğimiz INNER JOIN sorgusunu yazınız.
+
+
+```sql
+SELECT payment_id, first_name, last_name FROM customer
+INNER JOIN payment ON customer.customer_id = payment.customer_id;
+```
+![Image](assets/9.2.png)
+
+<br>
+<br>
+<br>
+
+3-) customer tablosu ile rental tablosunda bulunan rental_id ile customer tablosundaki first_name ve last_name isimlerini birlikte görebileceğimiz INNER JOIN sorgusunu yazınız.
+
+
+```sql
+SELECT rental_id, first_name, last_name FROM customer
+INNER JOIN rental ON customer.customer_id = rental.customer_id;
+```
+![Image](assets/9.3.png)
 
 <br>
 <br>
