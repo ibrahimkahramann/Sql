@@ -16,25 +16,25 @@
 
 ### Gitmek istediğiniz bölüme tıklayın.
 
-- [**SQL Ödev 01 | WHERE ve Karşılaştırma & Mantıksal**](#SQL-Ödev-01-|-WHERE-ve-Karşılaştırma-&-Mantıksal-Operatörler)
+- [**SQL Ödev 01 | WHERE ve Karşılaştırma & Mantıksal**](#SQL-Ödev-01-WHERE-ve-Karşılaştırma-ve-Mantıksal-Operatörler)
 - [**SQL Ödev 02 | BETWEEN ve IN**](#SQL-Ödev-02-BETWEEN-ve-IN)
-- [**SQL Ödev 03 | LIKE ve ILIKE**](#SQL-Ödev-03-|-LIKE-ve-ILIKE)
-- [**SQL Ödev 04 | DISTINCT ve COUNT**](#SQL-Ödev-04-|-DISTINCT-ve-COUNT)
-- [**SQL Ödev 05 | ORDER BY | LIMIT ve OFFSET**](#SQL-Ödev-05-|-ORDER-BY-|-LIMIT-ve-OFFSET)
-- [**SQL Ödev 06 | Aggregate Fonksiyonlar**](#SQL-Ödev-06-|-Aggregate-Fonksiyonlar)
-- [**SQL Ödev 07 | GROUP BY | HAVING**](#SQL-Ödev-07-|-GROUP-BY-|-HAVING)
-- [**SQL Ödev 08 | Tablo Oluşturmak | Verileri Güncellemek**](#SQL-Ödev-08-|-Tablo-Oluşturmak-|-Verileri-Güncellemek)
-- [**SQL Ödev 09 | INNER JOIN**](#SQL-Ödev-09-|-INNER-JOIN)
-- [**SQL Ödev 10 | LEFT JOIN, RIGHT JOIN, FULL JOIN**](#SQL-Ödev-10-|-LEFT-JOIN,-RIGHT-JOIN,-FULL-JOIN)
-- [**SQL Ödev 11 | UNION, INTERSECT ve EXCEPT**](#SQL-Ödev-11-|-UNION,-INTERSECT-ve-EXCEPT)
-- [**SQL Ödev 12 | Sorgu Senaryoları**](#SQL-Ödev-12-|-Sorgu-Senaryoları)
+- [**SQL Ödev 03 | LIKE ve ILIKE**](#SQL-Ödev-03-LIKE-ve-ILIKE)
+- [**SQL Ödev 04 | DISTINCT ve COUNT**](#SQL-Ödev-04-DISTINCT-ve-COUNT)
+- [**SQL Ödev 05 | ORDER BY | LIMIT ve OFFSET**](#SQL-Ödev-05-ORDER-BY-LIMIT-ve-OFFSET)
+- [**SQL Ödev 06 | Aggregate Fonksiyonlar**](#SQL-Ödev-06-Aggregate-Fonksiyonlar)
+- [**SQL Ödev 07 | GROUP BY | HAVING**](#SQL-Ödev-07-GROUP-BY-HAVING)
+- [**SQL Ödev 08 | Tablo Oluşturmak | Verileri Güncellemek**](#SQL-Ödev-08-Tablo-Oluşturmak-Verileri-Güncellemek)
+- [**SQL Ödev 09 | INNER JOIN**](#SQL-Ödev-09-INNER-JOIN)
+- [**SQL Ödev 10 | LEFT JOIN, RIGHT JOIN, FULL JOIN**](#SQL-Ödev-10-LEFT-JOIN-RIGHT-JOIN-FULL-JOIN)
+- [**SQL Ödev 11 | UNION, INTERSECT ve EXCEPT**](#SQL-Ödev-11-UNION-INTERSECT-EXCEPT)
+- [**SQL Ödev 12 | Sorgu Senaryoları**](#SQL-Ödev-12-Sorgu-Senaryoları)
 
 <br>
 <br>
 <br>
 
 
-## SQL Ödev 01 | WHERE ve Karşılaştırma & Mantıksal Operatörler 
+## SQL Ödev 01 WHERE ve Karşılaştırma ve Mantıksal Operatörler 
 
 <br>
 
@@ -174,7 +174,7 @@ WHERE rental_rate IN (0.99, 2.99, 4,99) AND replacement_cost IN (12.99, 15.99, 2
 <br>
 <br>
 
-## SQL Ödev 03 | LIKE ve ILIKE
+## SQL Ödev 03 LIKE ve ILIKE
 
 <br>
 
@@ -232,7 +232,7 @@ WHERE title LIKE 'C%' AND length > 90 AND rental_rate = 2.99;
 <br>
 <br>
 
-## SQL Ödev 04 | DISTINCT ve COUNT
+## SQL Ödev 04 DISTINCT ve COUNT
 
 <br>
 
@@ -309,7 +309,7 @@ WHERE city ILIKE '%r';
 <br>
 <br>
 
-## SQL Ödev 05 | ORDER BY | LIMIT ve OFFSET
+## SQL Ödev 05 ORDER BY LIMIT ve OFFSET
 
 <br>
 
@@ -360,7 +360,7 @@ LIMIT 4;
 <br>
 <br>
 
-## SQL Ödev 06 | Aggregate Fonksiyonlar
+## SQL Ödev 06 Aggregate Fonksiyonlar
 
 <br>
 
@@ -419,7 +419,7 @@ WHERE length > 150;
 <br>
 <br>
 
-## SQL Ödev 07 | GROUP BY | HAVING
+## SQL Ödev 07 GROUP BY HAVING
 
 <br>
 
@@ -483,7 +483,7 @@ LIMIT 1;
 <br>
 <br>
 
-## SQL Ödev 08 | Tablo Oluşturmak | Verileri Güncellemek"
+## SQL Ödev 08 Tablo Oluşturmak Verileri Güncellemek"
 
 <br>
 
@@ -599,7 +599,7 @@ RETURNING *;
 <br>
 <br>
 
-## SQL Ödev 09 | INNER JOIN
+## SQL Ödev 09 INNER JOIN
 
 <br>
 
@@ -647,7 +647,7 @@ INNER JOIN rental ON customer.customer_id = rental.customer_id;
 <br>
 <br>
 
-## SQL Ödev 10 | LEFT JOIN, RIGHT JOIN, FULL JOIN
+## SQL Ödev 10 LEFT JOIN RIGHT JOIN FULL JOIN
 
 <br>
 1-) city tablosu ile country tablosunda bulunan şehir (city) ve ülke (country) isimlerini birlikte görebileceğimiz LEFT JOIN sorgusunu yazınız.
@@ -697,7 +697,7 @@ FULL JOIN rental ON customer.customer_id= rental.customer_id;
 <br>
 <br>
 
-## SQL Ödev 11 | UNION, INTERSECT ve EXCEPT
+## SQL Ödev 11 UNION INTERSECT EXCEPT
 
 1-) actor ve customer tablolarında bulunan first_name sütunları için tüm verileri sıralayalım.
 
@@ -779,7 +779,7 @@ FROM customer;
 <br>
 <br>
 
-## SQL Ödev 12 | Sorgu Senaryoları
+## SQL Ödev 12 Sorgu Senaryoları
 
 1-) film tablosunda film uzunluğu length sütununda gösterilmektedir. Uzunluğu ortalama film uzunluğundan fazla kaç tane film vardır?
 
