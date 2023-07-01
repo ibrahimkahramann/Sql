@@ -13,18 +13,20 @@
 
 <br>
 
-- **SQL Ödev 01 | WHERE ve Karşılaştırma & Mantıksal**
-- **SQL Ödev 02 | BETWEEN ve IN**
-- **SQL Ödev 03 | LIKE ve ILIKE**
-- **SQL Ödev 04 | DISTINCT ve COUNT**
-- **SQL Ödev 05 | ORDER BY | LIMIT ve OFFSET**
-- **SQL Ödev 06 | Aggregate Fonksiyonlar**
-- **SQL Ödev 07 | GROUP BY | HAVING**
-- **SQL Ödev 08 | Tablo Oluşturmak | Verileri Güncellemek**
-- **SQL Ödev 09 | INNER JOIN**
-- **SQL Ödev 10 | LEFT JOIN, RIGHT JOIN, FULL JOIN**
-- **SQL Ödev 11 | UNION, INTERSECT ve EXCEPT**
-- **SQL Ödev 12 | Sorgu Senaryoları**
+### Gitmek istediğiniz bölüme tıklayın.
+
+- [**SQL Ödev 01 | WHERE ve Karşılaştırma & Mantıksal**](#SQL-Ödev-01-|-WHERE-ve-Karşılaştırma-&-Mantıksal-Operatörler)
+- [**SQL Ödev 02 | BETWEEN ve IN**](#SQL-Ödev-02-|-BETWEEN-ve-IN)
+- [**SQL Ödev 03 | LIKE ve ILIKE**](#SQL-Ödev-03-|-LIKE-ve-ILIKE)
+- [**SQL Ödev 04 | DISTINCT ve COUNT**](#SQL-Ödev-04-|-DISTINCT-ve-COUNT)
+- [**SQL Ödev 05 | ORDER BY | LIMIT ve OFFSET**](#SQL-Ödev-05-|-ORDER-BY-|-LIMIT-ve-OFFSET)
+- [**SQL Ödev 06 | Aggregate Fonksiyonlar**](#SQL-Ödev-06-|-Aggregate-Fonksiyonlar)
+- [**SQL Ödev 07 | GROUP BY | HAVING**](#SQL-Ödev-07-|-GROUP-BY-|-HAVING)
+- [**SQL Ödev 08 | Tablo Oluşturmak | Verileri Güncellemek**](#SQL-Ödev-08-|-Tablo-Oluşturmak-|-Verileri-Güncellemek)
+- [**SQL Ödev 09 | INNER JOIN**](#SQL-Ödev-09-|-INNER-JOIN)
+- [**SQL Ödev 10 | LEFT JOIN, RIGHT JOIN, FULL JOIN**](#SQL-Ödev-10-|-LEFT-JOIN,-RIGHT-JOIN,-FULL-JOIN)
+- [**SQL Ödev 11 | UNION, INTERSECT ve EXCEPT**](#SQL-Ödev-11-|-UNION,-INTERSECT-ve-EXCEPT)
+- [**SQL Ödev 12 | Sorgu Senaryoları**](#SQL-Ödev-12-|-Sorgu-Senaryoları)
 
 
 <br>
@@ -116,6 +118,10 @@ AND NOT (rental_rate = 2.99 OR rental_rate = 4.99);
 ![Image](assets/1.5.png)
 
 <br>
+
+[Başa Dön](#SQL-Eğitim-Patika)
+
+<br>
 <br>
 <br>
 
@@ -160,6 +166,9 @@ SELECT * FROM film
 WHERE rental_rate IN (0.99, 2.99, 4,99) AND replacement_cost IN (12.99, 15.99, 29.99);
 ```
 ![Image](assets/2.3.png)
+<br>
+
+[Başa Dön](#SQL-Eğitim-Patika)
 
 <br>
 <br>
@@ -215,6 +224,9 @@ SELECT * FROM film
 WHERE title LIKE 'C%' AND length > 90 AND rental_rate = 2.99; 
 ```
 ![Image](assets/3.4.png)
+<br>
+
+[Başa Dön](#SQL-Eğitim-Patika)
 
 <br>
 <br>
@@ -290,6 +302,10 @@ WHERE city ILIKE '%r';
 ```
 ![Image](assets/4.4.png)
 <br>
+
+[Başa Dön](#SQL-Eğitim-Patika)
+
+<br>
 <br>
 <br>
 
@@ -336,6 +352,10 @@ ORDER BY last_name DESC
 LIMIT 4;
 ```
 ![Image](assets/5.3.png)
+<br>
+
+[Başa Dön](#SQL-Eğitim-Patika)
+
 <br>
 <br>
 <br>
@@ -392,6 +412,10 @@ WHERE length > 150;
 ```
 ![Image](assets/6.4.png)
 <br>
+
+[Başa Dön](#SQL-Eğitim-Patika)
+
+<br>
 <br>
 <br>
 
@@ -434,6 +458,10 @@ GROUP BY store_id;
 ```
 ![Image](assets/7.3.png)
 <br>
+
+[Başa Dön](#SQL-Eğitim-Patika)
+
+<br>
 <br>
 <br>
 
@@ -447,6 +475,10 @@ ORDER BY COUNT(*) DESC
 LIMIT 1;
 ```
 ![Image](assets/7.4.png)
+<br>
+
+[Başa Dön](#SQL-Eğitim-Patika)
+
 <br>
 <br>
 <br>
@@ -560,6 +592,10 @@ WHERE id >5
 RETURNING *;
 ```
 <br>
+
+[Başa Dön](#SQL-Eğitim-Patika)
+
+<br>
 <br>
 <br>
 
@@ -601,6 +637,10 @@ SELECT rental_id, first_name, last_name FROM customer
 INNER JOIN rental ON customer.customer_id = rental.customer_id;
 ```
 ![Image](assets/9.3.png)
+<br>
+
+[Başa Dön](#SQL-Eğitim-Patika)
+
 
 
 <br>
@@ -649,6 +689,10 @@ SELECT rental_id, first_name, last_name FROM customer
 FULL JOIN rental ON customer.customer_id= rental.customer_id;
 ```
 ![Image](assets/10.3.png)
+<br>
+
+[Başa Dön](#SQL-Eğitim-Patika)
+
 <br>
 <br>
 <br>
@@ -727,6 +771,10 @@ EXCEPT ALL
 SELECT first_name 
 FROM customer;
 ```
+<br>
+
+[Başa Dön](#SQL-Eğitim-Patika)
+
 <br>
 <br>
 <br>
