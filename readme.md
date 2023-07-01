@@ -24,6 +24,7 @@
 - **SQL Ödev 09 | INNER JOIN**
 - **SQL Ödev 10 | LEFT JOIN, RIGHT JOIN, FULL JOIN**
 - **SQL Ödev 11 | UNION, INTERSECT ve EXCEPT**
+- **SQL Ödev 12 | Sorgu Senaryoları**
 
 
 <br>
@@ -726,7 +727,75 @@ EXCEPT ALL
 SELECT first_name 
 FROM customer;
 ```
+<br>
+<br>
+<br>
 
+## SQL Ödev 12 | Sorgu Senaryoları
+
+1-) film tablosunda film uzunluğu length sütununda gösterilmektedir. Uzunluğu ortalama film uzunluğundan fazla kaç tane film vardır?
+
+
+```sql
+SELECT COUNT(*)
+FROM film
+WHERE length > (
+  SELECT AVG(length)
+  FROM film
+);
+```
+![Image](assets/12.1.png)
+
+<br>
+<br>
+<br>
+
+2-) film tablosunda en yüksek rental_rate değerine sahip kaç tane film vardır?
+
+```sql
+SELECT COUNT(*)
+FROM film
+WHERE rental_rate = (
+  SELECT MAX(rental_rate)
+  FROM film
+);
+```
+![Image](assets/12.2.png)
+
+<br>
+<br>
+<br>
+
+3-) film tablosunda en düşük rental_rate ve en düşük replacement_cost değerlerine sahip filmleri sıralayınız.
+
+
+```sql
+SELECT * FROM film
+WHERE rental_rate = (
+  SELECT MIN(rental_rate)
+  FROM film
+)
+AND replacement_cost = (
+  SELECT MIN(replacement_cost)
+  FROM film
+);
+```
+![Image](assets/12.3.png)
+
+<br>
+<br>
+<br>
+
+4-) payment tablosunda en fazla sayıda alışveriş yapan müşterileri(customer) sıralayınız.
+
+
+```sql
+SELECT customer_id, COUNT(*) AS transaction_count
+FROM payment
+GROUP BY customer_id
+ORDER BY transaction_count DESC;
+```
+![Image](assets/12.4.png)
 <br>
 <br>
 <br>
