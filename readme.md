@@ -15,7 +15,7 @@
 
 ### Gitmek istediğiniz bölüme tıklayın.
 
-- [**SQL Ödev 01 | WHERE ve Karşılaştırma & Mantıksal**](#sql-ödev-01-where-ve-karşılaştırma-&-mantıksal-operatörler)
+- [**SQL Ödev 01 | WHERE ve Karşılaştırma & Mantıksal**](#SQL-Ödev-01-|-WHERE-ve-Karşılaştırma-&-Mantıksal-Operatörler)
 - [**SQL Ödev 02 | BETWEEN ve IN**](#SQL-Ödev-02-|-BETWEEN-ve-IN)
 - [**SQL Ödev 03 | LIKE ve ILIKE**](#SQL-Ödev-03-|-LIKE-ve-ILIKE)
 - [**SQL Ödev 04 | DISTINCT ve COUNT**](#SQL-Ödev-04-|-DISTINCT-ve-COUNT)
@@ -34,7 +34,7 @@
 <br>
 
 
-## SQL Ödev 01 WHERE ve Karşılaştırma & Mantıksal Operatörler 
+## SQL Ödev 01 | WHERE ve Karşılaştırma & Mantıksal Operatörler 
 
 <br>
 
