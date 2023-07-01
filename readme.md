@@ -17,7 +17,7 @@
 ### Gitmek istediğiniz bölüme tıklayın.
 
 - [**SQL Ödev 01 | WHERE ve Karşılaştırma & Mantıksal**](#SQL-Ödev-01-|-WHERE-ve-Karşılaştırma-&-Mantıksal-Operatörler)
-- [**SQL Ödev 02 | BETWEEN ve IN**](#SQL-Ödev-02-|-BETWEEN-ve-IN)
+- [**SQL Ödev 02 | BETWEEN ve IN**](#SQL-Ödev-02-BETWEEN-ve-IN)
 - [**SQL Ödev 03 | LIKE ve ILIKE**](#SQL-Ödev-03-|-LIKE-ve-ILIKE)
 - [**SQL Ödev 04 | DISTINCT ve COUNT**](#SQL-Ödev-04-|-DISTINCT-ve-COUNT)
 - [**SQL Ödev 05 | ORDER BY | LIMIT ve OFFSET**](#SQL-Ödev-05-|-ORDER-BY-|-LIMIT-ve-OFFSET)
@@ -28,7 +28,6 @@
 - [**SQL Ödev 10 | LEFT JOIN, RIGHT JOIN, FULL JOIN**](#SQL-Ödev-10-|-LEFT-JOIN,-RIGHT-JOIN,-FULL-JOIN)
 - [**SQL Ödev 11 | UNION, INTERSECT ve EXCEPT**](#SQL-Ödev-11-|-UNION,-INTERSECT-ve-EXCEPT)
 - [**SQL Ödev 12 | Sorgu Senaryoları**](#SQL-Ödev-12-|-Sorgu-Senaryoları)
-- [**SQL Eğitim Patika**](#SQL-Eğitim-Patika)
 
 <br>
 <br>
@@ -127,7 +126,7 @@ AND NOT (rental_rate = 2.99 OR rental_rate = 4.99);
 <br>
 
 
-## SQL Ödev 02 | BETWEEN ve IN
+## SQL Ödev 02 BETWEEN ve IN
 
 <br>
 
