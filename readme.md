@@ -599,6 +599,54 @@ INNER JOIN rental ON customer.customer_id = rental.customer_id;
 ```
 ![Image](assets/9.3.png)
 
+
+<br>
+<br>
+<br>
+
+## SQL Ödev 10 | LEFT JOIN, RIGHT JOIN, FULL JOIN
+
+<br>
+1-) city tablosu ile country tablosunda bulunan şehir (city) ve ülke (country) isimlerini birlikte görebileceğimiz LEFT JOIN sorgusunu yazınız.
+
+
+
+```sql
+SELECT city.city, country.country
+FROM city
+LEFT JOIN country ON city.country_id = country.country_id;
+```
+![Image](assets/10.1.png)
+
+<br>
+<br>
+<br>
+
+2-) customer tablosu ile payment tablosunda bulunan payment_id ile customer tablosundaki first_name ve last_name isimlerini birlikte görebileceğimiz RIGHT JOIN sorgusunu yazınız.
+
+
+
+```sql
+SELECT payment.payment_id, customer.first_name, customer.last_name
+FROM customer
+RIGHT JOIN payment ON customer.customer_id = payment.customer_id;
+```
+![Image](assets/10.2.png)
+
+<br>
+<br>
+<br>
+
+3-) customer tablosu ile rental tablosunda bulunan rental_id ile customer tablosundaki first_name ve last_name isimlerini birlikte görebileceğimiz FULL JOIN sorgusunu yazınız.
+
+
+
+```sql
+SELECT rental_id, first_name, last_name FROM customer
+FULL JOIN rental ON customer.customer_id= rental.customer_id;
+```
+![Image](assets/10.3.png)
+
 <br>
 <br>
 <br>
